@@ -125,7 +125,8 @@
 			<div class="container">
 				<a class="navbar-brand text-wrap" href="#">
 					<img
-						src="/assets/images/logo_title.png"
+						class="lazyload"
+						data-src="assets/images/logo_title.png"
 						alt="مشروع نظم معلومات السلطة المحلية"
 					/>
 				</a>
@@ -855,14 +856,12 @@
 						</li>
 
 						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#"
-								>الاستفتاءات</a
-							>
+							<a class="nav-link" aria-current="page" href="#">الاستفتاءات</a>
 						</li>
 					</ul>
 
 					<div class="d-md-block">
-						<a href="#" class="btn" type="button">
+						<a href="#" class="nav-link" type="button">
 							<svg
 								id="search"
 								xmlns="http://www.w3.org/2000/svg"
@@ -906,7 +905,7 @@
 								</g>
 							</svg>
 						</a>
-						<a href="#" class="btn" type="button">
+						<a href="#" class="nav-link" type="button">
 							<svg
 								id="contact"
 								xmlns="http://www.w3.org/2000/svg"
@@ -934,7 +933,7 @@
 								/>
 							</svg>
 						</a>
-						<a href="#" class="btn" type="button">
+						<a href="#" class="nav-link" type="button">
 							<svg
 								id="user"
 								xmlns="http://www.w3.org/2000/svg"
@@ -984,158 +983,59 @@
 			</div>
 		</nav>
 
-		<!-- hero header BEGIN -->
-		<div class="hero-header d-flex align-items-center">
+		<!-- Big Slider BEGIN -->
+		<div class="big-slider">
 			<div class="container">
-				<div class="row">
-					<div class="d-flex">
-						<div class="title me-auto">
-							<span class="before">>></span>
-							الاستفتاءات
-						</div>
-						<form class="d-flex search-form">
-							<input
-								class="form-control me-2"
-								type="search"
-								placeholder="بحث فى الاستفتاءات"
-								aria-label="Search"
-							/>
-							<button class="btn" type="submit">
-								<i class="far fa-search"></i>
-							</button>
-						</form>
+				<div class="splide">
+					<!-- Content -->
+					<div class="splide__track">
+						<ul class="splide__list">
+							<li class="splide__slide">
+								<div
+									class="content lazyload"
+									data-bg="assets/images/163396356661644e2e52ae1.jpg"
+								></div>
+							</li>
+							<li class="splide__slide">
+								<div
+									class="content lazyload"
+									data-bg="assets/images/163396356661644e2e52ae1.jpg"
+								></div>
+							</li>
+							<li class="splide__slide">
+								<div
+									class="content lazyload"
+									data-bg="assets/images/163396356661644e2e52ae1.jpg"
+								></div>
+							</li>
+						</ul>
+					</div>
+
+					<div class="data-container">
+						<!-- Arrows -->
+
+						<!-- Pagination -->
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- hero header END -->
+		<!-- Big Slider END -->
 
-		<!-- content BEGIN -->
-		<div class="container content">
-			<div class="row justify-content-center">
-				<div class="col-9">
-					<!-- section BEGIN -->
-					<div class="section first p-4 mb-5">
-						<div class="row">
-							<div class="col-12 col-sm-5 image-with-text">
-								<img
-									src="https://th.bing.com/th/id/OIP.uJc0rOul0Dn-w1l0qszAHAHaE7?pid=ImgDet&rs=1"
-									alt=""
-								/>
-								<div class="text">
-									ينتهي خلال
-									<span class="time">11:52:25</span>
-								</div>
-							</div>
-							<div class="col-12 col-sm-7">
-								<h2>
-									دائرة الرياضة العسكرية بوزارة الدفاع تنظم سباق اختراق الضاحية
-								</h2>
-								<div class="pt-2 pb-2">
-									<div class="form-check">
-										<input
-											class="form-check-input"
-											type="radio"
-											name="example-radio"
-											id="example-radio2"
-										/>
-										<label class="form-check-label" for="example-radio2">
-											مجموعة من القصص والروايات والرسومات من ابداع فتيات مراهقات
-											من المنطقة العربية
-										</label>
-									</div>
-									<div class="form-check">
-										<input
-											class="form-check-input"
-											type="radio"
-											name="example-radio"
-											id="example-radio3"
-										/>
-										<label class="form-check-label" for="example-radio3">
-											امسيات احتفالية فى شعوب بأمانة العاصمة بالمولد النبوي
-										</label>
-									</div>
-									<div class="form-check">
-										<input
-											class="form-check-input"
-											type="radio"
-											name="example-radio"
-											id="example-radio4"
-										/>
-										<label class="form-check-label" for="example-radio4">
-											اختتام ورشة عمل حول ادارة المصادر المائية فى اليمن
-										</label>
-									</div>
-								</div>
-
-								<div class="d-flex">
-									<button type="button" class="btn btn-outline-dark me-auto">
-										تاكيد الاختيار وعرض النتائج
-									</button>
-									<a href="#" class="primary btn">مشاركة</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- section END -->
-
-					<!-- section BEGIN -->
-					<div class="section p-4 mb-5">
-						<div class="list">
-							<div class="title">
-								<span class="before">&gt;&gt;</span>
-								استفتاءات منتهية
-							</div>
-
-							<ul class="custom-list list-unstyled">
-								<li>
-									<a class="d-flex" href="#">
-										<span class="me-auto">
-											دائرة الرياضة العسكرية تنظم سباق اختراق الضاحية
-										</span>
-										<span class="in-acrtive">16.325 صوت</span>
-									</a>
-								</li>
-								<li>
-									<a class="d-flex" href="#">
-										<span class="me-auto">
-											دائرة الرياضة العسكرية تنظم سباق اختراق الضاحية
-										</span>
-										<span class="in-acrtive">16.325 صوت</span>
-									</a>
-								</li>
-								<li>
-									<a class="d-flex" href="#">
-										<span class="me-auto">
-											دائرة الرياضة العسكرية تنظم سباق اختراق الضاحية
-										</span>
-										<span class="in-acrtive">16.325 صوت</span>
-									</a>
-								</li>
-								<li>
-									<a class="d-flex" href="#">
-										<span class="me-auto">
-											دائرة الرياضة العسكرية تنظم سباق اختراق الضاحية
-										</span>
-										<span class="in-acrtive">16.325 صوت</span>
-									</a>
-								</li>
-								<li>
-									<a class="d-flex" href="#">
-										<span class="me-auto">
-											دائرة الرياضة العسكرية تنظم سباق اختراق الضاحية
-										</span>
-										<span class="in-acrtive">16.325 صوت</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<!-- section END -->
+		<!-- News Ticker BEGIN -->
+		<div class="news-ticker">
+			<div class="hmove">
+				<div class="hitem">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+					dolor sit amet, consectetur adipiscing elit.
 				</div>
+				<div class="hitem">Aliquam consequat varius consequat.</div>
+				<div class="hitem">
+					Fusce dapibus turpis vel nisi malesuada sollicitudin.
+				</div>
+				<div class="hitem">Pellentesque auctor molestie orci ut blandit.</div>
 			</div>
 		</div>
-		<!-- content END -->
+		<!-- News Ticker END -->
 
 		<footer>
 			<div class="container">
@@ -1147,10 +1047,10 @@
 								<a href="#"> المنتدي </a>
 							</li>
 							<li>
-								<a href="#"> المنتدي </a>
+								<a href="#"> تواصل معنا </a>
 							</li>
 							<li>
-								<a href="#"> المنتدي </a>
+								<a href="#"> دخول المسؤولين</a>
 							</li>
 						</ul>
 					</div>
@@ -1162,52 +1062,73 @@
 							<div class="col">
 								<ul class="list list-unstyled">
 									<li>
-										<a href="#"> المنتدي </a>
+										<span class="title"> المواضيع </span>
 									</li>
 									<li>
-										<a href="#"> المنتدي </a>
+										<a href="#"> الأخبار المحلية </a>
 									</li>
 									<li>
-										<a href="#"> المنتدي </a>
-									</li>
-								</ul>
-							</div>
-							<div class="col">
-								<ul class="list list-unstyled">
-									<li>
-										<a href="#"> المنتدي </a>
+										<a href="#"> أخبار من مواقع أخرى </a>
 									</li>
 									<li>
-										<a href="#"> المنتدي </a>
+										<a href="#"> المدونة </a>
 									</li>
 									<li>
-										<a href="#"> المنتدي </a>
+										<a href="#"> المنتدى </a>
 									</li>
 								</ul>
 							</div>
 							<div class="col">
 								<ul class="list list-unstyled">
 									<li>
-										<a href="#"> المنتدي </a>
+										<span class="title"> المكتبة </span>
 									</li>
 									<li>
-										<a href="#"> المنتدي </a>
+										<a href="#"> الصوتيات </a>
 									</li>
 									<li>
-										<a href="#"> المنتدي </a>
+										<a href="#"> المرئيات </a>
+									</li>
+									<li>
+										<a href="#"> خريطة الجمهورية </a>
+									</li>
+									<li>
+										<a href="#"> التقارير </a>
+									</li>
+									<li>
+										<a href="#"> دليل المواقع </a>
 									</li>
 								</ul>
 							</div>
 							<div class="col">
 								<ul class="list list-unstyled">
 									<li>
-										<a href="#"> المنتدي </a>
+										<span class="title"> الاستفتاءات </span>
 									</li>
 									<li>
-										<a href="#"> المنتدي </a>
+										<a href="#"> الاستفتاءات </a>
 									</li>
 									<li>
-										<a href="#"> المنتدي </a>
+										<a href="#"> استفتاءات جارية </a>
+									</li>
+									<li>
+										<a href="#"> استفتاءات منتهية </a>
+									</li>
+								</ul>
+							</div>
+							<div class="col">
+								<ul class="list list-unstyled">
+									<li>
+										<span class="title"> الأحداث </span>
+									</li>
+									<li>
+										<a href="#"> الأحداث </a>
+									</li>
+									<li>
+										<a href="#"> فعاليات </a>
+									</li>
+									<li>
+										<a href="#"> ندوات </a>
 									</li>
 								</ul>
 							</div>
@@ -1216,7 +1137,8 @@
 
 					<div class="col-3">
 						<img
-							src="https://th.bing.com/th/id/R.0c101856128dfdb30318deef413cbf15?rik=Om9PxdCf%2fy6xZQ&pid=ImgRaw&r=0"
+							class="lazyload"
+							data-src="https://th.bing.com/th/id/R.0c101856128dfdb30318deef413cbf15?rik=Om9PxdCf%2fy6xZQ&pid=ImgRaw&r=0"
 							alt=""
 						/>
 						<div class="text text-center mt-2 mb-2">
@@ -1226,24 +1148,116 @@
 
 						<ul class="socialLinks list-unstyled list-inline text-center">
 							<li class="list-inline-item">
-								<a href="#"
-									><i class="social-facebook-hover fab fa-facebook-f"></i
-								></a>
+								<a href="#">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+									>
+										<path
+											id="f_rss"
+											d="M6.861,22.819a3.431,3.431,0,1,1-3.431-3.431,3.431,3.431,0,0,1,3.431,3.431Zm9.41,2.531A16.29,16.29,0,0,0,.9,9.978a.856.856,0,0,0-.9.857V13.41a.858.858,0,0,0,.8.858A12,12,0,0,1,11.982,25.452a.858.858,0,0,0,.858.8h2.575A.856.856,0,0,0,16.272,25.35ZM24,25.366A24.017,24.017,0,0,0,.884,2.251.856.856,0,0,0,0,3.108V5.683a.86.86,0,0,0,.828.857A19.718,19.718,0,0,1,19.71,25.422a.86.86,0,0,0,.857.828h2.575A.856.856,0,0,0,24,25.366Z"
+											transform="translate(0 -2.25)"
+											fill="#fff"
+										/>
+									</svg>
+								</a>
 							</li>
 							<li class="list-inline-item">
-								<a href="#"
-									><i class="social-twitter-hover fab fa-twitter"></i
-								></a>
+								<a href="#">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="34.133"
+										height="24"
+										viewBox="0 0 34.133 24"
+									>
+										<path
+											id="f_youtube"
+											d="M34.47,8.255a4.289,4.289,0,0,0-3.018-3.037C28.79,4.5,18.117,4.5,18.117,4.5s-10.674,0-13.336.718A4.289,4.289,0,0,0,1.763,8.255a44.992,44.992,0,0,0-.713,8.269,44.992,44.992,0,0,0,.713,8.269,4.225,4.225,0,0,0,3.018,2.989c2.662.718,13.336.718,13.336.718s10.674,0,13.336-.718a4.225,4.225,0,0,0,3.018-2.989,44.992,44.992,0,0,0,.713-8.269,44.992,44.992,0,0,0-.713-8.269ZM14.626,21.6V11.449l8.921,5.075L14.626,21.6Z"
+											transform="translate(-1.05 -4.5)"
+											fill="#fff"
+										/>
+									</svg>
+								</a>
 							</li>
 							<li class="list-inline-item">
-								<a href="#"
-									><i class="social-pinterest-hover fab fa-pinterest-p"></i
-								></a>
+								<a href="#">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="26"
+										height="26"
+										viewBox="0 0 26 26"
+									>
+										<g id="f_instagram" transform="translate(-2 -2)">
+											<path
+												id="Path_3"
+												data-name="Path 3"
+												d="M9,3H21a6,6,0,0,1,6,6V21a6,6,0,0,1-6,6H9a6,6,0,0,1-6-6V9A6,6,0,0,1,9,3Z"
+												fill="none"
+												stroke="#fff"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="2"
+											/>
+											<path
+												id="Path_4"
+												data-name="Path 4"
+												d="M21.613,16.031a4.8,4.8,0,1,1-4.044-4.044,4.8,4.8,0,0,1,4.044,4.044Z"
+												transform="translate(-1.813 -1.787)"
+												fill="none"
+												stroke="#fff"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="2"
+											/>
+											<path
+												id="Path_5"
+												data-name="Path 5"
+												d="M26.25,9.75h0"
+												transform="translate(-4.65 -1.35)"
+												fill="none"
+												stroke="#fff"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												stroke-width="2"
+											/>
+										</g>
+									</svg>
+								</a>
 							</li>
 							<li class="list-inline-item">
-								<a href="#"
-									><i class="social-whatsappteal1-hover fab fa-whatsapp"></i
-								></a>
+								<a href="#">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="25.856"
+										height="21"
+										viewBox="0 0 25.856 21"
+									>
+										<path
+											id="f_twitter"
+											d="M23.2,8.614c.016.23.016.459.016.689A14.974,14.974,0,0,1,8.138,24.381,14.975,14.975,0,0,1,0,22a10.963,10.963,0,0,0,1.28.066A10.613,10.613,0,0,0,7.859,19.8,5.309,5.309,0,0,1,2.9,16.128a6.683,6.683,0,0,0,1,.082A5.6,5.6,0,0,0,5.3,16.03a5.3,5.3,0,0,1-4.249-5.2v-.066a5.337,5.337,0,0,0,2.4.673A5.307,5.307,0,0,1,1.8,4.349,15.063,15.063,0,0,0,12.731,9.894,5.982,5.982,0,0,1,12.6,8.68a5.3,5.3,0,0,1,9.171-3.626,10.433,10.433,0,0,0,3.363-1.28,5.285,5.285,0,0,1-2.33,2.92,10.623,10.623,0,0,0,3.052-.82A11.391,11.391,0,0,1,23.2,8.614Z"
+											transform="translate(0 -3.381)"
+											fill="#fff"
+										/>
+									</svg>
+								</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#">
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="24"
+										height="23.854"
+										viewBox="0 0 24 23.854"
+									>
+										<path
+											id="f_facebook"
+											d="M24,12A12,12,0,1,0,10.125,23.854V15.469H7.078V12h3.047V9.356c0-3.008,1.792-4.669,4.533-4.669a18.455,18.455,0,0,1,2.686.234V7.875H15.831a1.734,1.734,0,0,0-1.956,1.874V12H17.2l-.532,3.469h-2.8v8.385A12,12,0,0,0,24,12Z"
+											fill="#fff"
+										/>
+									</svg>
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -1258,5 +1272,20 @@
 			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 			crossorigin="anonymous"
 		></script>
+		<!-- lazysizes -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.0/lazysizes.min.js"
+			integrity="sha256-RhEtvO7XOPdZ0D8EsRXVJWp9c2YLd5Wss4IZKthNn5g="
+			crossorigin="anonymous"
+		></script>
+		<!-- splidejs -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"
+			integrity="sha256-SmCcbf/1ehhlBnw3ZGinNu6fjQV471LDBjc4yMMJhsk="
+			crossorigin="anonymous"
+		></script>
+
+		<!-- Main Scripts -->
+		<script src="/assets/js/functions.js" name="functions"></script>
 	</body>
 </html>
