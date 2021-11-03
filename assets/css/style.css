@@ -94,6 +94,30 @@
 	color: var(--unnamed-color-464655);
 }
 
+/* Exep */
+[class*='exep-'] {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+.exep-1 {
+	-webkit-line-clamp: 1;
+}
+.exep-2 {
+	-webkit-line-clamp: 2;
+}
+.exep-3 {
+	-webkit-line-clamp: 3;
+}
+.exep-4 {
+	-webkit-line-clamp: 4;
+}
+.exep-5 {
+	-webkit-line-clamp: 5;
+}
+
 /***
  *      __  __              
  *     |  \/  |     ( )      
@@ -274,6 +298,9 @@ h6 {
 .title > span {
 	color: var(--unnamed-color-f56960);
 }
+.title > span:not(:first-child) {
+	color: unset;
+}
 
 /*   _   _             _                
 /*  | \ | |           | |               
@@ -284,6 +311,9 @@ h6 {
 /*                                      
 /*                                       */
 /* Navbar */
+.navbar {
+	z-index: 11111111;
+}
 .navbar .dropdown-item {
 	padding: 12px 24px;
 	font: var(--unnamed-font-style-normal) normal
@@ -526,7 +556,8 @@ h6 {
 }
 
 /* Audio */
-.d-section .audio .thumbnail {
+.d-section .audio .thumbnail,
+.posts-list .thumbnail {
 	width: calc(100% - 20px);
 	height: 80px;
 	background-position: center;
@@ -641,6 +672,94 @@ h6 {
 	font: normal normal bold 14px/21px Tajawal;
 	letter-spacing: 0px;
 	color: #f4f4f9;
+}
+
+/* Share inside post */
+.share-link {
+	float: left;
+	margin-left: 150px;
+	margin-top: 100px;
+}
+.share-link .title {
+	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+		var(--unnamed-font-size-14) / var(--unnamed-line-spacing-21)
+		var(--unnamed-font-family-tajawal);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	font: normal normal bold 14px/21px Tajawal;
+	letter-spacing: 0px;
+}
+.share-link .links {
+	list-style: none;
+	padding: 5px;
+}
+.share-link .links li:not(:last-child) {
+	margin-bottom: 5px;
+}
+.share-link .links a {
+	font: var(--unnamed-font-style-normal) normal
+		var(--unnamed-font-weight-normal) var(--unnamed-font-size-14) /
+		var(--unnamed-line-spacing-21) var(--unnamed-font-family-tajawal);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-464655);
+	font: normal normal normal 14px/21px Tajawal;
+	letter-spacing: 0px;
+	color: #464655;
+}
+.share-link .links a img {
+	margin-left: 10px;
+}
+
+/* Post */
+.post-title {
+	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+		var(--unnamed-font-size-48) / 72px var(--unnamed-font-family-tajawal);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-f56960);
+	text-align: center;
+	font: normal normal bold 48px/72px Tajawal;
+	letter-spacing: 0px;
+	color: #f56960;
+	padding: 0 0 20px;
+}
+.author-info,
+.author-info h4 {
+	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+		18px/27px var(--unnamed-font-family-tajawal);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-464655);
+	text-align: right;
+	font: normal normal bold 18px/27px Tajawal;
+	letter-spacing: 0px;
+	color: #464655;
+}
+.comments-list .item {
+	padding: 20px 0;
+}
+.comments-list .item:not(:last-child) {
+	border-bottom: 1px solid rgb(70 70 85 / 15%);
+}
+.comments-list .item .author-info,
+.comments-list .item .author-info h4 {
+	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+		var(--unnamed-font-size-14) / var(--unnamed-line-spacing-21)
+		var(--unnamed-font-family-tajawal);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-464655);
+	text-align: right;
+	font: normal normal bold 14px/21px Tajawal;
+	letter-spacing: 0px;
+	color: #464655;
+}
+.author-info *:not(:last-child) {
+	position: relative;
+	margin: 0 0 0 40px;
+}
+.author-info *:not(:last-child):after {
+	content: '•';
+	position: absolute;
+	font-size: 20px;
+	left: -22px;
+	top: 4px;
 }
 
 /*   ______          _            
