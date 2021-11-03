@@ -107,3 +107,29 @@ document.addEventListener('DOMContentLoaded', function () {
 		console.log(splide.index);
 	});
 });
+
+// Audio & Video Play controls
+window.addEventListener(
+	'play',
+	function (evt) {
+		if (window.$_currentlyPlaying && window.$_currentlyPlaying != evt.target) {
+			window.$_currentlyPlaying.pause();
+		}
+		window.$_currentlyPlaying = evt.target;
+	},
+	true
+);
+
+/* News Ticker */
+document.addEventListener('DOMContentLoaded', function (event) {
+	// Handle Trigger
+	const news = document.querySelectorAll('.news-ticker .hitem'),
+		container = document.querySelector('.news-ticker .hmove');
+	var counter = 0;
+
+	[].forEach.call(news, function (div) {
+		counter++;
+	});
+
+	container.style.animationDuration = counter * 15 + 's';
+});
