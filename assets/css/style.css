@@ -264,6 +264,92 @@ audio::-webkit-media-controls-panel {
 	color: var(--unnamed-color-ffffff) !important;
 }
 
+/* Modal */
+.modal {
+	background: rgb(70 70 85 / 10%) 0% 0% no-repeat padding-box;
+	opacity: 1;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+}
+.modal-dialog-scrollable .modal-content {
+	overflow: unset;
+}
+.modal .modal-header {
+	position: relative;
+	background-color: var(--unnamed-color-f4f4f9);
+	border-bottom: none;
+	padding: 40px 36px;
+}
+.modal .modal-header:after {
+	content: '';
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background-color: var(--unnamed-color-f4f4f9);
+	bottom: -40px;
+	left: 0;
+	clip-path: polygon(0 0, 0 100%, 100% 0);
+	z-index: 1;
+}
+.modal .modal-header img {
+	max-height: 52px;
+}
+.modal .modal-header .modal-title {
+	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+		var(--unnamed-font-size-24) / var(--unnamed-line-spacing-36)
+		var(--unnamed-font-family-tajawal);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	text-align: right;
+	font: normal normal bold 24px/36px Tajawal;
+	letter-spacing: 0px;
+}
+
+.modal .modal-header .modal-title span {
+	color: var(--unnamed-color-f56960);
+}
+.modal .modal-body {
+	padding: 40px 36px;
+}
+.modal.sign .modal-header img {
+	max-height: 140px;
+}
+.modal.sign .title {
+	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+		var(--unnamed-font-size-16) / var(--unnamed-line-spacing-24)
+		var(--unnamed-font-family-tajawal);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-464655);
+	text-align: right;
+	font: normal normal bold 16px/24px Tajawal;
+	letter-spacing: 0px;
+	color: #464655;
+}
+.modal.sign .modal-content {
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+.modal.sign .outer-close {
+	position: absolute;
+	top: -50px;
+	right: 0;
+}
+.modal.sign .outer-link {
+	position: absolute;
+	bottom: -50px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+.modal.sign .outer-link a {
+	color: var(--unnamed-color-ffffff);
+}
+.modal.sign .outer-link a:hover,
+.modal.sign .outer-link a:focus,
+.modal.sign .outer-link a:active,
+.modal.sign .outer-link a.active {
+	opacity: 0.6;
+}
+
 /*   ____            _       
 /*  |  _ \          | |      
 /*  | |_) | ___   __| |_   _ 
@@ -312,7 +398,7 @@ h6 {
 /*                                       */
 /* Navbar */
 .navbar {
-	z-index: 11111111;
+	z-index: 1000;
 }
 .navbar .dropdown-item {
 	padding: 12px 24px;
@@ -394,6 +480,12 @@ h6 {
 .navbar .nav-link.active svg path,
 .navbar .nav-link:hover svg path {
 	stroke: var(--unnamed-color-f56960);
+}
+.navbar .actions > *:not(:last-child) {
+	margin-left: 1rem;
+}
+.navbar .actions .nav-link {
+	padding: 0.5rem 0;
 }
 
 /*    _____           _   _               ____  _            _    
