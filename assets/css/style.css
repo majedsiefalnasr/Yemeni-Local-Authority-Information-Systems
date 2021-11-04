@@ -556,6 +556,9 @@ h6 {
 	position: relative;
 	padding: 80px 0;
 }
+.d-section.outer .container {
+	margin-top: -150px;
+}
 .d-section[class*='clip-']:after {
 	content: '';
 	position: absolute;
@@ -656,6 +659,10 @@ h6 {
 	letter-spacing: 0px;
 	color: #464655;
 }
+.d-section .title.h2 {
+	font: normal normal bold 48px/24px Tajawal;
+	line-height: 120%;
+}
 .d-section .text {
 	font: var(--unnamed-font-style-normal) normal
 		var(--unnamed-font-weight-normal) var(--unnamed-font-size-16) /
@@ -679,6 +686,22 @@ h6 {
 }
 .d-section a {
 	text-decoration: none;
+}
+.d-section a.back {
+	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+		18px/27px var(--unnamed-font-family-tajawal);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-f56960);
+	text-align: right;
+	font: normal normal bold 18px/27px Tajawal;
+	letter-spacing: 0px;
+	color: #f56960;
+}
+.d-section a.back:hover,
+.d-section a.back:focus,
+.d-section a.back:active,
+.d-section a.back.active {
+	color: var(--unnamed-color-0c0c0d);
 }
 
 /* Big Slide */
@@ -749,6 +772,12 @@ h6 {
 .d-section .audio .content > a:not(:last-child) {
 	margin-bottom: 24px;
 }
+.d-section .audio a:hover .title,
+.d-section .audio a:focus .title,
+.d-section .audio a:active .title,
+.d-section .audio a.active .title {
+	color: var(--unnamed-color-f56960);
+}
 
 /* Video */
 .d-section .video .thumbnail {
@@ -794,6 +823,12 @@ h6 {
 }
 .d-section .video .content > a:not(:last-child) {
 	margin-bottom: 24px;
+}
+.d-section .video a:hover .title,
+.d-section .video a:focus .title,
+.d-section .video a:active .title,
+.d-section .video a.active .title {
+	color: var(--unnamed-color-f56960);
 }
 
 /* Custom List */
@@ -918,6 +953,7 @@ h6 {
 .page-header {
 	background-color: var(--unnamed-color-f56960);
 	color: var(--unnamed-color-ffffff);
+	padding-bottom: 120px;
 }
 .page-header .title {
 	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
