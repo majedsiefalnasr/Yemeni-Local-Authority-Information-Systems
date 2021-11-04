@@ -449,6 +449,38 @@ h6 {
 	left: 0;
 	clip-path: polygon(0 0, 0 100%, 100% 100%);
 }
+.d-section.clip-tro:after {
+	bottom: unset;
+	left: unset;
+	top: -80px;
+	right: 0;
+	clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+	z-index: 1;
+}
+.d-section.clip-tlo:after {
+	bottom: unset;
+	right: unset;
+	top: -80px;
+	left: 0;
+	clip-path: polygon(0 0, 0 100%, 100% 100%);
+	z-index: 1;
+}
+.d-section.clip-bro:after {
+	top: unset;
+	left: unset;
+	bottom: -80px;
+	right: 0;
+	clip-path: polygon(0 0, 100% 100%, 100% 0);
+	z-index: 1;
+}
+.d-section.clip-blo:after {
+	top: unset;
+	right: unset;
+	bottom: -80px;
+	left: 0;
+	clip-path: polygon(0 0, 0 100%, 100% 0);
+	z-index: 1;
+}
 .d-section .header {
 	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
 		var(--unnamed-font-size-48) / var(--unnamed-line-spacing-24)
@@ -678,7 +710,12 @@ h6 {
 .share-link {
 	float: left;
 	margin-left: 150px;
-	margin-top: 100px;
+}
+.share-link .content {
+	position: absolute;
+	top: 100px;
+	left: 0;
+	width: max-content;
 }
 .share-link .title {
 	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
@@ -707,6 +744,12 @@ h6 {
 }
 .share-link .links a img {
 	margin-left: 10px;
+}
+.share-link .links a:hover span,
+.share-link .links a:focus span,
+.share-link .links a:active span,
+.share-link .links a.active span {
+	color: var(--unnamed-color-f56960);
 }
 
 /* Post */
