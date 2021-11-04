@@ -287,6 +287,9 @@ audio::-webkit-media-controls-panel {
 	backdrop-filter: blur(10px);
 	-webkit-backdrop-filter: blur(10px);
 }
+[data-bs-toggle='modal'] {
+	cursor: pointer;
+}
 .modal-dialog-scrollable .modal-content {
 	overflow: unset;
 }
@@ -364,6 +367,10 @@ audio::-webkit-media-controls-panel {
 .modal.sign .outer-link a:active,
 .modal.sign .outer-link a.active {
 	opacity: 0.6;
+}
+.modal.video-player iframe {
+	width: 100%;
+	min-height: 400px;
 }
 
 /* Pagination */
