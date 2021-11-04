@@ -1,0 +1,8 @@
+<svg id="download" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <path id="container" d="M0,0H80V80H0Z" fill="#fff" opacity="0"/>
+  <g id="Icon_feather-download" data-name="Icon feather-download" transform="translate(3.5 3.5)">
+    <path id="Path_61" data-name="Path 61" d="M68.5,22.5V36.722a7.111,7.111,0,0,1-7.111,7.111H11.611A7.111,7.111,0,0,1,4.5,36.722V22.5" transform="translate(0 24.667)" fill="none" stroke="#464655" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <path id="Path_62" data-name="Path 62" d="M10.5,15,28.278,32.778,46.056,15" transform="translate(8.222 14.389)" fill="none" stroke="#464655" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <path id="Path_63" data-name="Path 63" d="M18,47.167V4.5" transform="translate(18.5)" fill="none" stroke="#464655" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+  </g>
+</svg>
