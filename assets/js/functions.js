@@ -133,3 +133,42 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
 	container.style.animationDuration = counter * 15 + 's';
 });
+
+/* Forms */
+//Change phone number
+$('input[type="tel"]').intlTelInput({
+	utilsScript:
+		'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.6/js/utils.js',
+});
+
+//
+
+//
+document.addEventListener('DOMContentLoaded', function (event) {
+	const parent = document.querySelectorAll(
+			'#nav-tab-profile > [data-bs-toggle="tab"]'
+		),
+		target = document.querySelectorAll(
+			'#nav-tab-profile > [data-bs-toggle="tab"]'
+		)[0],
+		slider = document.querySelector('.nav-tabs-indicator > span');
+
+	console.log('width ' + target.offsetWidth);
+	console.log('left ' + target.offsetLeft);
+
+	slider.style.width = target.offsetWidth + 'px';
+	slider.style.left = target.offsetLeft - slider.offsetWidth + 'px';
+
+	[].forEach.call(parent, function (div) {
+		div.addEventListener('click', function (e) {
+			let width = div.offsetWidth,
+				left = div.offsetLeft;
+
+			console.log('width ' + width);
+			console.log('left ' + left);
+
+			slider.style.width = width + 'px';
+			slider.style.left = left - slider.offsetWidth + 'px';
+		});
+	});
+});
