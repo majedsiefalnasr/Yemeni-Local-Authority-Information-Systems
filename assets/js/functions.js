@@ -122,42 +122,86 @@ window.addEventListener(
 
 /* News Ticker */
 document.addEventListener('DOMContentLoaded', function (event) {
-	// Handle Trigger
-	const news = document.querySelectorAll('.news-ticker .hitem'),
-		container = document.querySelector('.news-ticker .hmove');
-	var counter = 0;
+	if (document.querySelector('.news-ticker')) {
+		// Handle Trigger
+		const news = document.querySelectorAll('.news-ticker .hitem'),
+			container = document.querySelector('.news-ticker .hmove');
+		var counter = 0;
 
-	[].forEach.call(news, function (div) {
-		counter++;
-	});
+		[].forEach.call(news, function (div) {
+			counter++;
+		});
 
-	container.style.animationDuration = counter * 15 + 's';
+		container.style.animationDuration = counter * 15 + 's';
+	}
 });
 
 /* Forms */
 //Change phone number
-$('input[type="tel"]').intlTelInput({
-	utilsScript:
-		'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.6/js/utils.js',
+document.addEventListener('DOMContentLoaded', function (event) {
+	if (document.querySelector('input[type="tel"]')) {
+		$('input[type="tel"]').intlTelInput({
+			utilsScript:
+				'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.6/js/utils.js',
+		});
+	}
+});
+
+// Enable tooltips everywhere
+document.addEventListener('DOMContentLoaded', function (event) {
+	var tooltipTriggerList = [].slice.call(
+		document.querySelectorAll('[data-bs-toggle="tooltip"]')
+	);
+	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+		return new bootstrap.Tooltip(tooltipTriggerEl, {
+			trigger: 'manual',
+		});
+	});
+});
+
+// Hover Tooltip
+document.addEventListener('DOMContentLoaded', function (event) {
+	const parent = document.querySelectorAll('#yemen_map > g');
+
+	[].forEach.call(parent, function (div) {
+		let child = div.querySelector('g[data-bs-toggle="tooltip"]'),
+			tooltip = bootstrap.Tooltip.getInstance(child);
+
+		if (child) {
+			div.addEventListener('mouseover', function (event) {
+				$('[data-bs-toggle="tooltip"]').tooltip('hide');
+				tooltip.show();
+			});
+
+			div.addEventListener('mouseleave', function (event) {
+				let leaveParent = true,
+					leaveChild;
+
+				if (leaveParent && leaveChild) {
+					div.classList.remove('active');
+					tooltip.hide();
+				}
+			});
+		}
+	});
 });
 
 //
-
-//
 document.addEventListener('DOMContentLoaded', function (event) {
-	const parent = document.getElementById('nav-tab-profile'),
-		tabs = document.querySelectorAll(
-			'#nav-tab-profile > [data-bs-toggle="tab"]'
-		),
-		slider = document.querySelector('.nav-tabs-indicator > span');
+	if (document.getElementById('nav-tab-profile')) {
+		const tabs = document.querySelectorAll(
+				'#nav-tab-profile > [data-bs-toggle="tab"]'
+			),
+			slider = document.querySelector('.nav-tabs-indicator > span');
 
-	slider.style.width = tabs[0].offsetWidth + 'px';
-	slider.style.left = tabs[0].offsetLeft + 'px';
+		slider.style.width = tabs[0].offsetWidth + 'px';
+		slider.style.left = tabs[0].offsetLeft + 'px';
 
-	[].forEach.call(tabs, function (div) {
-		div.addEventListener('click', function (e) {
-			slider.style.width = div.offsetWidth + 'px';
-			slider.style.left = div.offsetLeft + 'px';
+		[].forEach.call(tabs, function (div) {
+			div.addEventListener('click', function (e) {
+				slider.style.width = div.offsetWidth + 'px';
+				slider.style.left = div.offsetLeft + 'px';
+			});
 		});
-	});
+	}
 });
