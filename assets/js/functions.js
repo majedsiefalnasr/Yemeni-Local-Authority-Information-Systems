@@ -145,30 +145,19 @@ $('input[type="tel"]').intlTelInput({
 
 //
 document.addEventListener('DOMContentLoaded', function (event) {
-	const parent = document.querySelectorAll(
+	const parent = document.getElementById('nav-tab-profile'),
+		tabs = document.querySelectorAll(
 			'#nav-tab-profile > [data-bs-toggle="tab"]'
 		),
-		target = document.querySelectorAll(
-			'#nav-tab-profile > [data-bs-toggle="tab"]'
-		)[0],
 		slider = document.querySelector('.nav-tabs-indicator > span');
 
-	console.log('width ' + target.offsetWidth);
-	console.log('left ' + target.offsetLeft);
+	slider.style.width = tabs[0].offsetWidth + 'px';
+	slider.style.left = tabs[0].offsetLeft + 'px';
 
-	slider.style.width = target.offsetWidth + 'px';
-	slider.style.left = target.offsetLeft - slider.offsetWidth + 'px';
-
-	[].forEach.call(parent, function (div) {
+	[].forEach.call(tabs, function (div) {
 		div.addEventListener('click', function (e) {
-			let width = div.offsetWidth,
-				left = div.offsetLeft;
-
-			console.log('width ' + width);
-			console.log('left ' + left);
-
-			slider.style.width = width + 'px';
-			slider.style.left = left - slider.offsetWidth + 'px';
+			slider.style.width = div.offsetWidth + 'px';
+			slider.style.left = div.offsetLeft + 'px';
 		});
 	});
 });

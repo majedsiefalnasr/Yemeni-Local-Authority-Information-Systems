@@ -1226,7 +1226,30 @@ h6 {
 .nav-tabs.custom {
 	border: none;
 }
+.nav-tabs.custom .nav-link {
+	font: var(--unnamed-font-style-normal) normal
+		var(--unnamed-font-weight-normal) var(--unnamed-font-size-24) /
+		var(--unnamed-line-spacing-24) var(--unnamed-font-family-tajawal);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-464655);
+	text-align: center;
+	font: normal normal normal 24px/24px Tajawal;
+	letter-spacing: 0px;
+	color: #464655;
+}
 .nav-tabs.custom .nav-link.active {
+	border: none;
+	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+		var(--unnamed-font-size-24) / var(--unnamed-line-spacing-24)
+		var(--unnamed-font-family-tajawal);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-464655);
+	text-align: center;
+	font: normal normal bold 24px/24px Tajawal;
+	letter-spacing: 0px;
+}
+.nav-tabs.custom .nav-link:focus,
+.nav-tabs.custom .nav-link:hover {
 	border: none;
 }
 .nav-tabs-indicator {
