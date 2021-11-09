@@ -1507,6 +1507,10 @@ footer .socialLinks {
 	.thumbnail {
 		width: 100% !important;
 	}
+	.d-section .audio .thumbnail,
+	.posts-list .thumbnail {
+		height: 150px;
+	}
 }
 
 /* Medium devices (tablets, 768px and up) */
