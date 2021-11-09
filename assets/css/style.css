@@ -1137,13 +1137,12 @@ h6 {
 /* Share inside post */
 .share-link {
 	float: left;
-	margin-left: 150px;
 	height: 350px;
 }
 .share-link .content {
 	position: absolute;
 	top: 100px;
-	left: 0;
+	left: 130px;
 	width: max-content;
 }
 .share-link .title {
@@ -1513,6 +1512,48 @@ footer .socialLinks {
 		max-width: 250px;
 		padding: 40px 40px 20px;
 	}
+	.share-link {
+		position: fixed;
+		float: none;
+		height: unset;
+		bottom: 0;
+		top: unset;
+		left: 0;
+		width: 100%;
+		text-align: center;
+	}
+	.share-link .content {
+		position: relative;
+		top: 0;
+		left: 0 !important;
+		padding: 0 20px 20px;
+		width: 100%;
+		text-align: center;
+	}
+	.share-link .links {
+		display: flex;
+		margin-bottom: 0;
+		border-radius: 500px;
+		justify-content: center !important;
+		background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+		width: fit-content;
+		margin: auto;
+		padding: 10px;
+		box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+	}
+	.share-link .links li:not(:last-child) {
+		margin-bottom: 0;
+		margin-left: 20px;
+	}
+	.share-link .links li a > span {
+		display: none;
+	}
+	.share-link .title {
+		display: none;
+	}
+	.share-link .links a img {
+		margin-left: 0;
+	}
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -1534,6 +1575,9 @@ footer .socialLinks {
 }
 /* Large devices (desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
+	.share-link .content {
+		left: 70px;
+	}
 }
 
 /* Extra large devices (large desktops, 1600px and up) */
