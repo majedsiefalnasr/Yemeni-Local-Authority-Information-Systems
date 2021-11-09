@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'Yemeni-map-';
+  src:  url('fonts/Yemeni-map-.eot?qrnehm');
+  src:  url('fonts/Yemeni-map-.eot?qrnehm#iefix') format('embedded-opentype'),
+    url('fonts/Yemeni-map-.ttf?qrnehm') format('truetype'),
+    url('fonts/Yemeni-map-.woff?qrnehm') format('woff'),
+    url('fonts/Yemeni-map-.svg?qrnehm#Yemeni-map-') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="yemeni-map-"], [class*=" yemeni-map-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Yemeni-map-' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.yemeni-map-Abyan:before {
+  content: "\e900";
+  color: #464655;
+}
+.yemeni-map-Ad-Dali:before {
+  content: "\e901";
+  color: #464655;
+}
+.yemeni-map-Aden:before {
+  content: "\e902";
+  color: #464655;
+}
+.yemeni-map-Al-Bayda:before {
+  content: "\e903";
+  color: #464655;
+}
+.yemeni-map-Al-Hudaydah:before {
+  content: "\e904";
+  color: #464655;
+}
+.yemeni-map-Al-Jawf:before {
+  content: "\e905";
+  color: #464655;
+}
+.yemeni-map-Al-Mahrah:before {
+  content: "\e906";
+  color: #464655;
+}
+.yemeni-map-Al-Mahwit:before {
+  content: "\e907";
+  color: #464655;
+}
+.yemeni-map-Amran:before {
+  content: "\e908";
+  color: #464655;
+}
+.yemeni-map-Capital-Municipality:before {
+  content: "\e909";
+  color: #464655;
+}
+.yemeni-map-Dhamar:before {
+  content: "\e90a";
+  color: #464655;
+}
+.yemeni-map-Hadhramaut:before {
+  content: "\e90b";
+  color: #464655;
+}
+.yemeni-map-Hajjah:before {
+  content: "\e90c";
+  color: #464655;
+}
+.yemeni-map-Ibb:before {
+  content: "\e90d";
+  color: #464655;
+}
+.yemeni-map-Lahij:before {
+  content: "\e90e";
+  color: #464655;
+}
+.yemeni-map-Marib:before {
+  content: "\e90f";
+  color: #464655;
+}
+.yemeni-map-Raymah:before {
+  content: "\e910";
+  color: #464655;
+}
+.yemeni-map-Saada:before {
+  content: "\e911";
+  color: #464655;
+}
+.yemeni-map-Sanaa:before {
+  content: "\e912";
+  color: #464655;
+}
+.yemeni-map-Shabwah:before {
+  content: "\e913";
+  color: #464655;
+}
+.yemeni-map-Socotra:before {
+  content: "\e914";
+  color: #464655;
+}
+.yemeni-map-Taizz:before {
+  content: "\e915";
+  color: #464655;
+}
