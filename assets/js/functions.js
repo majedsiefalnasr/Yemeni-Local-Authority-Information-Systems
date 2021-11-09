@@ -182,6 +182,10 @@ document.addEventListener('DOMContentLoaded', function (event) {
 					tooltip.hide();
 				}
 			});
+
+			div.addEventListener('click', function (event) {
+				window.location.href = '../city.html';
+			});
 		}
 	});
 });
