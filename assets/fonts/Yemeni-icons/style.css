@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'Yemeni-icon-';
+  src:  url('fonts/Yemeni-icon-.eot?ybyrhq');
+  src:  url('fonts/Yemeni-icon-.eot?ybyrhq#iefix') format('embedded-opentype'),
+    url('fonts/Yemeni-icon-.ttf?ybyrhq') format('truetype'),
+    url('fonts/Yemeni-icon-.woff?ybyrhq') format('woff'),
+    url('fonts/Yemeni-icon-.svg?ybyrhq#Yemeni-icon-') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="yemeni-icon-"], [class*=" yemeni-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Yemeni-icon-' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.yemeni-icon-arrow:before {
+  content: "\e900";
+}
+.yemeni-icon-down:before {
+  content: "\e901";
+}
+.yemeni-icon-audio:before {
+  content: "\e902";
+}
+.yemeni-icon-blog:before {
+  content: "\e903";
+}
+.yemeni-icon-calendar:before {
+  content: "\e904";
+}
+.yemeni-icon-capital_star:before {
+  content: "\e905";
+}
+.yemeni-icon-close:before {
+  content: "\e906";
+}
+.yemeni-icon-comments:before {
+  content: "\e907";
+}
+.yemeni-icon-contact:before {
+  content: "\e908";
+}
+.yemeni-icon-email:before {
+  content: "\e909";
+}
+.yemeni-icon-external_link:before {
+  content: "\e90a";
+}
+.yemeni-icon-download:before {
+  content: "\e90b";
+}
+.yemeni-icon-flag:before {
+  content: "\e90c";
+}
+.yemeni-icon-global:before {
+  content: "\e90d";
+}
+.yemeni-icon-local:before {
+  content: "\e90e";
+}
+.yemeni-icon-map:before {
+  content: "\e90f";
+}
+.yemeni-icon-message:before {
+  content: "\e910";
+}
+.yemeni-icon-password:before {
+  content: "\e911";
+}
+.yemeni-icon-play_video:before {
+  content: "\e912";
+}
+.yemeni-icon-report:before {
+  content: "\e913";
+}
+.yemeni-icon-search:before {
+  content: "\e914";
+}
+.yemeni-icon-send:before {
+  content: "\e915";
+}
+.yemeni-icon-user:before {
+  content: "\e916";
+}
+.yemeni-icon-forum:before {
+  content: "\e917";
+}
+.yemeni-icon-video:before {
+  content: "\e918";
+}
+.yemeni-icon-views:before {
+  content: "\e919";
+}
+.yemeni-icon-f_facebook:before {
+  content: "\e91a";
+}
+.yemeni-icon-f_twitter:before {
+  content: "\e91b";
+}
+.yemeni-icon-f_instagram:before {
+  content: "\e91c";
+}
+.yemeni-icon-f_youtube:before {
+  content: "\e91d";
+}
+.yemeni-icon-f_rss:before {
+  content: "\e91e";
+}
