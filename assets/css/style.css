@@ -1568,9 +1568,6 @@ footer .socialLinks {
 }
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-	.share-link .content {
-		left: 30px !important;
-	}
 }
 
 /* Extra large devices (large desktops, 1400px and up) */
@@ -1579,7 +1576,7 @@ footer .socialLinks {
 /* Large devices (desktops, less than 1400px) */
 @media (max-width: 1399.98px) {
 	.share-link .content {
-		left: 70px;
+		left: 60px;
 	}
 }
 
