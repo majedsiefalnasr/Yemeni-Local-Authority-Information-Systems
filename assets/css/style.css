@@ -923,12 +923,32 @@ h6 {
 }
 
 /* Big Slide */
+.splide__slide {
+	border-radius: 8px;
+}
 .big-slider .splide__slide .content {
 	min-height: 600px;
 	border-radius: 8px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+.splide__pagination .splide__pagination__page {
+	border-radius: 1000px;
+	width: 16px;
+	height: 16px;
+	border: 1px solid var(--unnamed-color-f4f4f9);
+	background: #46465533 0% 0% no-repeat padding-box;
+	border: 1px solid #f4f4f9;
+}
+.splide__pagination .splide__pagination__page.is-active {
+	border-radius: 1000px;
+	width: 16px;
+	height: 16px;
+	background: var(--unnamed-color-f56960) 0% 0% no-repeat padding-box;
+	border: 1px solid var(--unnamed-color-f4f4f9);
+	background: #f56960 0% 0% no-repeat padding-box;
+	border: 1px solid #f4f4f9;
 }
 
 /* News Ticker */

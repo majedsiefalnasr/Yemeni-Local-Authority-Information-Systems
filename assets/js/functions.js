@@ -91,23 +91,37 @@ document.addEventListener('DOMContentLoaded', function (event) {
 //      | |                 _/ |
 //      |_|                |__/
 // splidejs
-document.addEventListener('DOMContentLoaded', function () {
-	var splide = new Splide('.big-slider .splide', {
-		type: 'loop',
-		perPage: 1,
-		focus: 'center',
-		pauseOnFocus: true,
-		autoplay: true,
-		interval: 3000,
-		direction: 'rtl',
-		arrowPath: 'M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z',
-	}).mount();
+// Big Slider
+// document.addEventListener('DOMContentLoaded', function () {
+// 	var splide = new Splide('.big-slider .splide', {
+// 		type: 'loop',
+// 		perPage: 1,
+// 		focus: 'center',
+// 		pauseOnFocus: true,
+// 		autoplay: true,
+// 		interval: 30000,
+// 		direction: 'rtl',
+// 		arrowPath: 'M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z',
+// 	}).mount();
 
-	splide.on('active', function () {
-		console.log(splide.index);
-	});
-});
+// 	splide.on('active', function () {
+// 		let container = document.querySelector('.big-slider .data-container');
 
+// 		$('#').appendTo('#new-div');
+
+// 		console.log(container);
+// 		console.log(splide.index);
+// 	});
+// });
+
+//                     _ _                 __      ___     _              _____  _                               _             _
+//      /\            | (_)         ___    \ \    / (_)   | |            |  __ \| |                             | |           | |
+//     /  \  _   _  __| |_  ___    ( _ )    \ \  / / _  __| | ___  ___   | |__) | | __ _ _   _    ___ ___  _ __ | |_ _ __ ___ | |___
+//    / /\ \| | | |/ _` | |/ _ \   / _ \/\   \ \/ / | |/ _` |/ _ \/ _ \  |  ___/| |/ _` | | | |  / __/ _ \| '_ \| __| '__/ _ \| / __|
+//   / ____ \ |_| | (_| | | (_) | | (_>  <    \  /  | | (_| |  __/ (_) | | |    | | (_| | |_| | | (_| (_) | | | | |_| | | (_) | \__ \
+//  /_/    \_\__,_|\__,_|_|\___/   \___/\/     \/   |_|\__,_|\___|\___/  |_|    |_|\__,_|\__, |  \___\___/|_| |_|\__|_|  \___/|_|___/
+//                                                                                        __/ |
+//                                                                                       |___/
 // Audio & Video Play controls
 window.addEventListener(
 	'play',
@@ -120,7 +134,15 @@ window.addEventListener(
 	true
 );
 
-/* News Ticker */
+//   _   _                     _______ _      _
+//  | \ | |                   |__   __(_)    | |
+//  |  \| | _____      _____     | |   _  ___| | _____ _ __
+//  | . ` |/ _ \ \ /\ / / __|    | |  | |/ __| |/ / _ \ '__|
+//  | |\  |  __/\ V  V /\__ \    | |  | | (__|   <  __/ |
+//  |_| \_|\___| \_/\_/ |___/    |_|  |_|\___|_|\_\___|_|
+//
+//
+// News Ticker
 document.addEventListener('DOMContentLoaded', function (event) {
 	if (document.querySelector('.news-ticker')) {
 		// Handle Trigger
