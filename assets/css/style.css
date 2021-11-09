@@ -1610,6 +1610,9 @@ footer .socialLinks {
 		font-size: 20px;
 		line-height: 140%;
 	}
+	.d-section .video .text {
+		height: auto;
+	}
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
