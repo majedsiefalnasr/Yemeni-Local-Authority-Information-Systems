@@ -505,6 +505,10 @@ audio::-webkit-media-controls-panel {
 	top: -50px;
 	right: 0;
 }
+.modal.sign .outer-close .btn {
+	padding-right: 0;
+	font-size: 24px;
+}
 .modal.sign .outer-link {
 	position: absolute;
 	bottom: -50px;
@@ -619,6 +623,9 @@ h6 {
 	font: normal normal bold 14px/21px Tajawal;
 	letter-spacing: 0px;
 	color: #464655 !important;
+}
+[class*='yemeni-icon-'] {
+	font-size: 24px;
 }
 
 /*   _   _             _                

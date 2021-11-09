@@ -8,6 +8,20 @@
 		"Splide",
 		"tajawal",
 		"tickerh",
-		"xhttp"
-	]
+		"xhttp",
+		"استفتاءات",
+		"الالكتروني",
+		"البحث",
+		"البريد",
+		"المرور",
+		"المستخدمين",
+		"الموقع",
+		"تسجيل",
+		"دخول",
+		"كلمة",
+		"منتهية",
+		"نسيت"
+	],
+	"spellright.language": ["ar", "en"],
+	"spellright.documentTypes": ["markdown", "latex", "plaintext", "html"]
 }
