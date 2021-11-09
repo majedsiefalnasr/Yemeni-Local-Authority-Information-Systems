@@ -1023,7 +1023,7 @@ h6 {
 .d-section .video .thumbnail:after {
 	top: calc(50% - 50px);
 	left: calc(50% - 50px);
-	background: transparent url('../svg/play_video.svg') 0% 0% no-repeat
+	background: transparent url('../images/play_video.png') 0% 0% no-repeat
 		padding-box;
 	background-position: center;
 	width: 100px;
@@ -1377,6 +1377,9 @@ h6 {
 .post-info > *:not(:last-child) {
 	margin-left: 10px;
 }
+.post-info [class*='yemeni-icon-'] {
+	font-size: 18px;
+}
 
 /* Polls */
 .polls .title {
@@ -1571,6 +1574,7 @@ footer .socialLinks {
 		display: block;
 		overflow-x: auto;
 		overflow-y: hidden;
+		text-align: center;
 	}
 	.nav-tabs.custom .nav-link {
 		display: inline-block;
