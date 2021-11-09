@@ -1504,6 +1504,9 @@ footer .socialLinks {
 }
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+	.thumbnail {
+		width: 100% !important;
+	}
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -1584,6 +1587,20 @@ footer .socialLinks {
 	}
 	.nav-tabs.custom .nav-link.active {
 		border-bottom: 6px solid var(--unnamed-color-f56960);
+	}
+	.navbar-brand img {
+		width: 200px;
+	}
+	.d-section.clip-tro.page-header:after,
+	.d-section.clip-tlo.page-header:after,
+	.d-section.clip-bro.page-header:after,
+	.d-section.clip-blo.page-header:after {
+		z-index: -1;
+	}
+	.page-header .title,
+	.post-title {
+		font-size: 34px;
+		line-height: 140%;
 	}
 }
 
