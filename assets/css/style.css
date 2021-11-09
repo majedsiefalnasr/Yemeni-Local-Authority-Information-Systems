@@ -638,7 +638,7 @@ h6 {
 /*                                       */
 /* Navbar */
 .navbar {
-	z-index: 1000;
+	z-index: 1030;
 }
 .navbar .dropdown-item {
 	padding: 12px 24px;
@@ -1138,6 +1138,7 @@ h6 {
 .share-link {
 	float: left;
 	margin-left: 150px;
+	height: 350px;
 }
 .share-link .content {
 	position: absolute;
