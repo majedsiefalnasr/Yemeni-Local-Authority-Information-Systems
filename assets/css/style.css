@@ -998,6 +998,68 @@ h6 {
 	animation-play-state: paused;
 }
 
+/* News Slider */
+.nav-tabs .nav-link {
+	max-width: 100%;
+}
+.news-slider .content .nav-tabs {
+	border-bottom: none;
+}
+.news-slider .content .thumbnail {
+	max-width: 150px;
+}
+.news-slider .content .nav-link.active {
+	background: rgb(245 105 96 / 15%) 0% 0% no-repeat padding-box;
+	border-radius: 8px;
+}
+.news-slider .nav-link.active .content .progress {
+	background-color: rgb(70 70 85 / 5%);
+}
+.news-slider .nav-link.active .content .progress .progress-bar {
+	-webkit-animation-name: progressWidth;
+	animation-name: progressWidth;
+	-webkit-animation-duration: 10s;
+	animation-duration: 10s;
+	-webkit-animation-iteration-count: unset;
+	animation-iteration-count: unset;
+	background-color: var(--unnamed-color-f56960);
+}
+@keyframes progressWidth {
+	100% {
+		width: 100%;
+	}
+	0% {
+		width: 0%;
+	}
+}
+.news-slider .nav-link.active:hover .content .progress .progress-bar,
+.news-slider .nav-link.active:active .content .progress .progress-bar,
+.news-slider .nav-link.active:hover .content .progress .progress-bar {
+	animation-play-state: paused;
+}
+.news-slider .tab-content,
+.news-slider .tab-content .tab-pane,
+.news-slider .tab-content .tab-pane .image-with-text {
+	height: 100%;
+}
+.news-slider
+	.tab-content
+	.tab-pane
+	.image-with-text
+	.text
+	> :not(:last-child):after {
+	content: none;
+}
+.news-slider .tab-content .tab-pane .image-with-text .text > :not(:last-child) {
+	margin: 0 0 10px 0;
+}
+.news-slider .tab-content .tab-pane .title {
+	color: var(--unnamed-color-ffffff) !important;
+}
+.news-slider .tab-content .tab-pane .title.small {
+	color: var(--unnamed-color-F4F4F9) !important;
+}
+
 /* Audio */
 .d-section .audio .thumbnail,
 .posts-list .thumbnail {
@@ -1532,6 +1594,32 @@ footer .socialLinks {
 	.posts-list .thumbnail {
 		height: 150px;
 	}
+	.news-slider .content .thumbnail {
+		max-width: 100px !important;
+		width: 80px !important;
+		height: 60px;
+		margin: 0 !important;
+	}
+	.news-slider .tab-content .tab-pane .image-with-text {
+		height: 400px;
+	}
+	.news-slider .nav-tabs .nav-link {
+		display: inline-block;
+	}
+	.news-slider .nav-tabs .nav-link,
+	.news-slider .nav-link > .content {
+		width: max-content;
+	}
+	.news-slider .nav-link > .content *:not(.thumbnail) {
+		display: none !important;
+	}
+	.news-slider .content .nav-tabs {
+		white-space: nowrap;
+		display: block;
+		overflow-x: auto;
+		overflow-y: hidden;
+		text-align: center;
+	}
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -1633,6 +1721,9 @@ footer .socialLinks {
 	}
 	.d-section .video .text {
 		height: auto;
+	}
+	.news-slider .content .thumbnail {
+		max-width: 0px;
 	}
 }
 

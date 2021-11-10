@@ -134,6 +134,43 @@ window.addEventListener(
 	true
 );
 
+//   _______    _        _____ _ _     _
+//  |__   __|  | |      / ____| (_)   | |
+//     | | __ _| |__   | (___ | |_  __| | ___ _ __
+//     | |/ _` | '_ \   \___ \| | |/ _` |/ _ \ '__|
+//     | | (_| | |_) |  ____) | | | (_| |  __/ |
+//     |_|\__,_|_.__/  |_____/|_|_|\__,_|\___|_|
+//
+//
+// Tab Slider
+document.addEventListener('DOMContentLoaded', function (event) {
+	if (document.querySelector('#news-pills-tab')) {
+		var tabs = document.querySelectorAll('[data-bs-toggle="tab"]'),
+			tabFirstTrigger = new bootstrap.Tab(tabs[0]);
+
+		[].forEach.call(tabs, function (tab) {
+			tab.addEventListener('shown.bs.tab', function (e) {
+				var progressbarContainer = e.target.querySelector(
+					'[role="progressbar"]'
+				);
+				progressbarContainer.addEventListener('animationend', function () {
+					progressbarContainer.style.width = 0 + '%';
+
+					var nextTarget = e.target.nextElementSibling;
+					if (nextTarget) {
+						let tabTrigger = new bootstrap.Tab(nextTarget);
+						tabTrigger.show();
+					} else {
+						tabFirstTrigger.show();
+					}
+				});
+			});
+		});
+
+		tabFirstTrigger.show();
+	}
+});
+
 //   _   _                     _______ _      _
 //  | \ | |                   |__   __(_)    | |
 //  |  \| | _____      _____     | |   _  ___| | _____ _ __
