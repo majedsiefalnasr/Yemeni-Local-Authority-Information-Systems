@@ -14,35 +14,6 @@ if (userLang.split('-')[0].length) {
 	browserLang = userLang.split('-')[0];
 }
 
-//   _                     _
-//  | |                   (_)
-//  | | __ _ _____   _ ___ _ _______  ___
-//  | |/ _` |_  / | | / __| |_  / _ \/ __|
-//  | | (_| |/ /| |_| \__ \ |/ /  __/\__ \
-//  |_|\__,_/___|\__, |___/_/___\___||___/
-//                __/ |
-//               |___/
-// lazysizes
-// Configuration
-window.lazySizesConfig = window.lazySizesConfig || {};
-
-// use .lazy instead of .lazyload
-// window.lazySizesConfig.lazyClass = "lazy";
-
-// use data-original instead of data-src
-// lazySizesConfig.srcAttr = "data-original";
-
-//page is optimized for fast onload event
-lazySizesConfig.loadMode = 1;
-
-// add simple support for background images:
-document.addEventListener('lazybeforeunveil', function (e) {
-	var bg = e.target.getAttribute('data-bg');
-	if (bg) {
-		e.target.style.backgroundImage = 'url(' + bg + ')';
-	}
-});
-
 //    _____                       _   _        _____                _ _   _          _______
 //   / ____|                     | | | |      / ____|              | | | | |        |__   __|
 //  | (___  _ __ ___   ___   ___ | |_| |__   | (___   ___ _ __ ___ | | | | |_ ___      | | ___  _ __

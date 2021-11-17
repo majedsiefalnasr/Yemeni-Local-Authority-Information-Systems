@@ -22,6 +22,6 @@
 		"منتهية",
 		"نسيت"
 	],
-	"spellright.language": ["ar", "en"],
+	"spellright.language": ["en"],
 	"spellright.documentTypes": ["markdown", "latex", "plaintext", "html"]
 }
