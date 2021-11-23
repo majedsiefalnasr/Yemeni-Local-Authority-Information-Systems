@@ -1620,9 +1620,6 @@ footer .socialLinks {
 		overflow-y: hidden;
 		text-align: center;
 	}
-	.d-section .header {
-		font: normal normal bold 32px/24px Tajawal;
-	}
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -1727,6 +1724,9 @@ footer .socialLinks {
 	}
 	.news-slider .content .thumbnail {
 		max-width: 0px;
+	}
+	.d-section .header {
+		font: normal normal bold 32px/24px Tajawal;
 	}
 }
 
