@@ -828,7 +828,7 @@ h6 {
 		var(--unnamed-font-family-tajawal);
 	letter-spacing: var(--unnamed-character-spacing-0);
 	text-align: right;
-	font: normal normal bold 48px/24px Tajawal;
+	font: normal normal bold 40px/24px Tajawal;
 	letter-spacing: 0px;
 	padding-bottom: 40px;
 	line-height: 120%;
@@ -1619,6 +1619,9 @@ footer .socialLinks {
 		overflow-x: auto;
 		overflow-y: hidden;
 		text-align: center;
+	}
+	.d-section .header {
+		font: normal normal bold 32px/24px Tajawal;
 	}
 }
 
