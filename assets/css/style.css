@@ -743,10 +743,18 @@ h6 {
 /* Section Block */
 .d-section {
 	position: relative;
-	padding: 80px 0;
+	padding: 50px 0;
 }
 .d-section.outer .container {
 	margin-top: -150px;
+}
+.d-section.clip-br,
+.d-section.clip-bl {
+	padding-bottom: 80px;
+}
+.d-section.clip-tr,
+.d-section.clip-tl {
+	padding-top: 80px;
 }
 .d-section[class*='clip-']:after {
 	content: '';
