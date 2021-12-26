@@ -1160,7 +1160,8 @@ h6 {
 	color: var(--unnamed-color-464655);
 	font: normal normal normal 14px/24px Tajawal;
 	letter-spacing: 0px;
-	width: 90px;
+	/* width: 90px; */
+	text-align: left;
 	opacity: 0.5;
 	margin-right: 10px;
 }
