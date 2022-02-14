@@ -228,7 +228,19 @@ document.addEventListener('DOMContentLoaded', function () {
 					.addEventListener('click', () => {
 						// Hide Modal
 						mapModal.hide();
+						div.classList.remove('active');
 					});
+
+				// Active state
+				[].forEach.call(parent, function (divX) {
+					divX.classList.remove('active');
+				});
+				div.classList.add('active');
+
+				var myModalEl = document.getElementById('mapData');
+				myModalEl.addEventListener('hide.bs.modal', function (event) {
+					div.classList.remove('active');
+				});
 			});
 		}
 	});
