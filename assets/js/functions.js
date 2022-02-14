@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 });
 
 // Hover Tooltip
-document.addEventListener('DOMContentLoaded', function (event) {
+document.addEventListener('DOMContentLoaded', function () {
 	const parent = document.querySelectorAll('#yemen_map > g');
 
 	[].forEach.call(parent, function (div) {
@@ -198,12 +198,12 @@ document.addEventListener('DOMContentLoaded', function (event) {
 			tooltip = bootstrap.Tooltip.getInstance(child);
 
 		if (child) {
-			div.addEventListener('mouseover', function (event) {
+			div.addEventListener('mouseover', function () {
 				$('[data-bs-toggle="tooltip"]').tooltip('hide');
 				tooltip.show();
 			});
 
-			div.addEventListener('mouseleave', function (event) {
+			div.addEventListener('mouseleave', function () {
 				let leaveParent = true,
 					leaveChild;
 
@@ -213,8 +213,22 @@ document.addEventListener('DOMContentLoaded', function (event) {
 				}
 			});
 
-			div.addEventListener('click', function (event) {
-				window.location.href = '../city.html';
+			div.addEventListener('click', function () {
+				var mapModalContainer = document.getElementById('mapData');
+				var mapModal = new bootstrap.Modal(mapModalContainer);
+
+				// Open Modal
+				mapModal.show();
+
+				// Pass data to modal
+				mapModalContainer.setAttribute('data-city', div.getAttribute('id'));
+
+				mapModalContainer
+					.querySelector('.back')
+					.addEventListener('click', () => {
+						// Hide Modal
+						mapModal.hide();
+					});
 			});
 		}
 	});

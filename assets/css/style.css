@@ -530,6 +530,38 @@ audio::-webkit-media-controls-panel {
 	min-height: 400px;
 }
 
+/* Map Modal */
+#mapData .modal-dialog {
+	min-height: 100%;
+	width: 50%;
+	max-width: unset;
+	margin: 0 0 0 auto;
+	animation: mapData 0.2s ease-in-out;
+	animation-fill-mode: forwards;
+}
+@keyframes mapData {
+	100% {
+		transform: translateX(0);
+	}
+	0% {
+		transform: translateX(100%);
+	}
+}
+#mapData .d-section .back {
+	display: block;
+	padding: 20px 0;
+	background: #fff;
+	font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+		18px/27px var(--unnamed-font-family-tajawal);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-f56960);
+	text-align: right;
+	font: normal normal bold 18px/27px Tajawal;
+	letter-spacing: 0px;
+	color: #f56960;
+	cursor: pointer;
+}
+
 audio.custom::-webkit-media-controls-play-button,
 audio.custom::-webkit-media-controls-panel {
 	background-color: rgb(245 105 96 / 15%);
@@ -1747,6 +1779,10 @@ footer .socialLinks {
 	}
 	.wpp-options {
 		width: 100% !important;
+	}
+
+	#mapData .modal-dialog {
+		width: 100%;
 	}
 }
 
